@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Project Portfolio</title>
     <style>
         * {
@@ -95,19 +95,24 @@
         }
 
         .link-card {
-            background: #28a745;
-            padding: 20px;
+            /* Removed background and padding here */
             border-radius: 5px;
+            /* Optional: keep text-align center for nice text positioning */
             text-align: center;
         }
 
         .link-card a {
+            display: block; /* make anchor fill the card */
+            background: #28a745;
+            padding: 20px;
+            border-radius: 5px;
             color: white;
             text-decoration: none;
             font-weight: bold;
+            transition: background 0.3s ease;
         }
 
-        .link-card:hover {
+        .link-card a:hover {
             background: #218838;
         }
 
@@ -129,6 +134,7 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
+            transition: background 0.3s ease;
         }
 
         .video-section a:hover {
@@ -150,19 +156,19 @@
             <h2>Team Members</h2>
             <div class="team-members">
                 <div class="member">
-                    <img src="/noor.jpeg" alt="Noor">
+                    <img src="/noor.jpeg" alt="Noor" />
                     <h3>Noor al Huda</h3>
                 </div>
                 <div class="member">
-                    <img src="/gceuvas.jpeg" alt="Geovanni">
+                    <img src="/gceuvas.jpeg" alt="Geovanni" />
                     <h3>Geovanni Cuevas</h3>
                 </div>
                 <div class="member">
-                    <img src="/kath.jpeg" alt="Katheryn">
+                    <img src="/kath.jpeg" alt="Katheryn" />
                     <h3>Katheryn Robles</h3>
                 </div>
                 <div class="member">
-                    <img src="/johnfue.jpeg" alt="John">
+                    <img src="/johnfue.jpeg" alt="John" />
                     <h3>John Fuentes</h3>
                 </div>
             </div>
@@ -172,17 +178,17 @@
             <h2>Project Documents</h2>
             <div class="links-grid">
                 <div class="link-card">
-                    <a href="/SP110-Blue-LinuxAnomaly-FinalReport-2.pdf" target="_blank">Final Report</a>
+                    <a href="/SP110-Blue-LinuxAnomaly-FinalReport-2.pdf" target="_blank" rel="noopener noreferrer">Final Report</a>
                 </div>
                 <div class="link-card">
-                    <a href="https://github.com/john-fuentes/MLThreatDetector" target="_blank">GitHub Repository</a>
+                    <a href="https://github.com/john-fuentes/MLThreatDetector" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
                 </div>
             </div>
         </section>
 
         <section class="video-section">
             <h2>Final Presentation Video</h2>
-            <a href="https://youtu.be/0j__QaS4o0o" target="_blank">Watch Video</a>
+            <a href="https://youtu.be/0j__QaS4o0o" target="_blank" rel="noopener noreferrer">Watch Video</a>
         </section>
     </div>
 </body>
